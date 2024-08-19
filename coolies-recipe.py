@@ -28,4 +28,7 @@ else:
     
 time.sleep(2)
 print("Game over! you have " + str(score) + "points")
+print("The ingredient_list was:")
+time.sleep(2)
+print(ingredient_list)
     
