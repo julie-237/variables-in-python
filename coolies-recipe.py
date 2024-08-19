@@ -13,18 +13,20 @@ time.sleep(2)
 
 ingredient_2= input("guess ingredient 2 ")
 if ingredient_2 in ingredient_list:
-    print("wow, congratulations")
-    score = score + 1
-else:
-    print("oups, error!")
+    if ingredient_2 != ingredient_1:
+        print("wow, congratulations")
+        score = score + 1
+    else:
+        print("oups, error!")
 time.sleep(2)
     
 ingredient_3= input("guess ingredient 3 ")
 if ingredient_3 in ingredient_list:
-    print("wow, congratulations")
-    score = score + 1
-else:
-    print("oups, error!")
+    if ingredient_3 != ingredient_1 and ingredient_2:
+        print("wow, congratulations")
+        score = score + 1
+    else:
+        print("oups, error!")
     
 time.sleep(2)
 if score <= 1:
